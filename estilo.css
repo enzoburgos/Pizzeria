@@ -3,23 +3,196 @@
     padding: 0;
     font-family: sans-serif;
 }
-
+/* ------------------ header ---------------------- */
 header{
     background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;    
+    height: 3.5rem;
+    /* position: fixed; */
+
+}
+header nav{
+    display: flex;
+    gap: 2rem;
+}
+header .icon-cart{
+    font-size: 1.5rem;
 }
 
-.hero{
+/* -------------------- hero ---------------------- */
+.container-hero{
     background-color: antiquewhite;
 }
+.hero{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.hero h1{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+.hero p{
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+}
+.hero button{
+    font-size: 1.5rem;
+    /* margin-left: rem; */
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(236, 72, 153), rgb(239, 68, 68), rgb(234, 179, 8))
+}
 
+/* --------------------- menu --------------------- */
 .menu{
     background-color:beige;
+    width: 90%;
+    margin: 0 auto;
+}
+.menu h1{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.menu .secciones-comida{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    padding-bottom: 1.5rem;
+}
+.secciones-comida button{
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #FBA834;
+    border: 1px solid #FBA834;
+    border-radius: 5px;
+    cursor: pointer;
+    /* transform: translate(); */
+}
+.secciones-comida button:hover{
+    transition: .5s;
+    color: white;
+    background-color: #FBA834;
+}
+.menu .container-card-comida{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.container-card-comida h3{
+    padding-bottom: .3rem;
+}
+.container-card-comida p{
+    line-height: 1.3rem;
+}
+.container-card-comida div{
+    /* width: 33.3%; */
+    flex-basis: 30%;
+}
+.container-card-comida img{
+    width: 100%;
+}
+.container-card-comida .btn-mas-menos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn-mas-menos .btn-menos{
+    padding: .2rem .6rem;
+    font-size: 1.2rem;
+    border: 1px solid #001254;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-mas-menos .btn-mas{
+    padding: .2rem .5rem;
+    font-size: 1.2rem;
+    border: 1px solid #001254;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-mas-menos .btn-menos:hover{
+    transition: .5s;
+    color: white;
+    background-color: #001254;
+}
+.btn-mas-menos .btn-mas:hover{
+    transition: .5s;
+    color: white;
+    background-color: #001254;
+}
+.btn-mas-menos p{
+    font-size: 1.2rem;
+}
+.btn-mas-menos .btn-agregar{
+    padding: .45rem .8rem;
+    border: 1px solid #FBA834;
+    border-radius: 15px;
+    color: #FBA834;
+    cursor: pointer;
+}
+.btn-agregar:hover{
+    transition: .5s;
+    color: white;
+    background-color: #FBA834;
+
 }
 
+/* ----------------- contacto ------------------- */
 .contacto{
     background-color: lightblue;
+    width: 90%;
+    margin: 0 auto;
+}
+.contacto h1{
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.contacto .container-info-mas-map{
+    display: flex;
+}
+.container-info-mas-map .info-contacto{
+    width: 50%;
+}
+.container-info-mas-map .mapa-contacto{
+    width: 50%;
 }
 
+.info-contacto h2{
+    line-height: 3rem;
+}
+.info-contacto .texto-info{
+    line-height: 1.5rem;
+}
+.info-contacto h3{
+    padding-top: 1rem;
+}
+.info-contacto .container-icons-redes{
+    display: flex; 
+    gap: 1rem;
+    padding-top: 1rem;
+    
+}   
+.info-contacto .icons-redes{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 footer{
     background-color: lightpink;
+    text-align: center;
+    padding: 1rem 0 .5rem 0;
 }
